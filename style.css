@@ -21,6 +21,131 @@ nav {
 }
 
 nav a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    
     color : white;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section {
+    margin : 2rem 0;
+}
+
+footer {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1100px;
+}
+
+
+.projects-container {
+    display :flex;
+    flex-wrap : wrap;
+    gap : 2rem;
+
+}
+
+.project-card {
+    flex : 1 1 300px;
+    padding: 1.5rem;
+    background-color: white;
+    border : 1px solid #222;
+    border-radius: 10px;
+    transition : box-shadow 0.9s ease,  transform 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    transform: translateY(-4px);
+}
+
+
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.project-button {
     text-decoration : none;
+    color : black;
+    padding: 0.6rem 1rem;
+    border: 1px solid gray;
+    border-radius: 6px;
+    display: inline-block;
+    transition:
+        box-shadow 0.3s ease,
+        transform 0.3s ease,
+        background-color 0.3s ease;
+    
+
+}
+
+.project-button:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    background-color: gray;
+    color : white;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+}
+
+input,
+textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font: inherit;
+    width : 100%;
+    
+}
+
+input {
+    
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+.submit-contact {
+    text-decoration : none;
+    color : black;
+    padding: 0.6rem 1rem;
+    border: 1px solid gray;
+    border-radius: 6px;
+    display: inline-block;
+    align-self: flex-start;
+    font-family: "Montserrat", sans-serif;
+
+     transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.submit-contact:hover {
+    background-color: gray;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
